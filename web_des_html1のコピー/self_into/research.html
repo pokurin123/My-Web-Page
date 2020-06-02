@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/research.css">
+    <title>Document</title>
+</head>
+<body bgcolor="black">
+    <div class="title">
+        <font color="white" size ="7">
+            <span class="blink">
+                <h2 style="text-align:center">
+                    ☆研究内容☆
+                </h2>
+            </span>    
+        </font>
+    </div>
+    <div style="padding: 10px; margin-bottom: 10px; border: 5px double #333333;" class="research_1">
+        <font color="white" size ="5">
+            <h1>
+                1.機械学習を用いたVR空間の自動生成
+            </h1>
+            <h3>
+                テキストや画像など、何かしらの要素を入力するとそれに応じたVR空間を自動生成する
+            </h3>
+            <img src="images/dousa.png" width="50%" height="50%">
+            図1
+            <div class="res_tex1">
+                <h3>
+                    図1の様な流れでVR空間の設計図となるCSVファイルを生成し、それに基づいたVR空間が作られる。<br>
+                    現在、CSVファイルを用いたVR空間の自動生成をさせることまでが完了しており、今後は研究内容に合致した、CSVファイルを生成する機械学習システムを開発する予定。
+                </h3>
+                <h2>
+                    ・研究背景
+                </h2>
+                <h3>
+                    VRコンテンツを作るためには、専門的な知識や機材などの高いコストが必要とされる。
+                    これはVRコンテンツが普及しない一因となっている。<br>
+                    →VRコンテンツを自動生成するシステムを研究する事で、その普及を手助けする！
+                </h3>
+            </div>
+            <img src="images/dousa_ex.png" width="50%" height="50%">
+            図2.オブジェクトの自動選択、自動配置の動作例
+            <img src="images/csv_ex.png" width="40%" height="40%">
+            図3.使用したCSVファイル(左からオブジェクト名,xyz値,拡大値,回転値)
+        </font>
+    </div>
+    <div style="padding: 10px; margin-bottom: 10px; border: 5px double #333333;" class="research_2">
+        <font color="white" size ="5">
+            <h1>
+                2.OpenStreetMapから実在する地理情報を取得し、それをVR空間に3Dモデルで自動的に表現する
+            </h1>
+            <img src="images/res2.png" width="50%" height="50%">
+            図1.研究ワークフロー
+            <div class="res_tex2">
+                <h2>
+                    ・OpenStreetMap(以下OSM)から取得する地理情報について
+                </h2>
+                <img src="images/node1.png" width="50%" height="50%">
+                図2.地理情報1
+                <img src="images/node2.png" width="50%" height="50%">
+                図3.地理情報2
+                <h3>
+                    OSMから取得した地理情報は、図2の様に緯度経度が指定された座標形式で保存されており、それらの座標が図3の様にIDによって、建造物や道ごとに一まとめにされている。<br>
+                    図3では恐らく一本道の高速道路の座標情報が保存されているため、上から平面に見たときの4つの頂点が管理されている。
+                </h3>
+                <h2>
+                    ・座標を使った3Dモデル生成について
+                </h2>
+                <img src="images/node3.png" width="50%" height="50%">
+                図4.3Dモデル生成例
+                <h3>
+                    前述した座標である、赤い矢印が示した様な上方の頂点さえ取得してしまえば、<br>
+                    頂点を接続した面を形成<br>
+                    ↓<br>
+                    面に垂直な直線を下へ伸ばす<br>
+                    ↓<br>
+                    伸ばした各直線に対応した面を形成<br>
+                    によって建物を形成できる。
+                </h3>
+            </div>
+        </font>
+    </div>
+</body>
+</html>
