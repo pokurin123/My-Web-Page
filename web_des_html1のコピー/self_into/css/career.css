@@ -1,0 +1,15 @@
+.blink {
+    animation: blinkAnime 0.3s infinite alternate;
+  }
+  @keyframes blinkAnime{
+     0% { color: #ffffff }
+   100% { color: #00e200 }
+  }
+
+.date_text{
+    height: 550px;
+    line-height: 200px;
+}
+.school_career{
+    line-height:3;
+}
