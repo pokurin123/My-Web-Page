@@ -6,10 +6,13 @@
    100% { color: #00e200 }
   }
 
-.date_text{
-    height: 550px;
-    line-height: 200px;
-}
+#gnav ul li{
+
+  display: inline;
+  
+  }
+
+
 .school_career{
     line-height:3;
 }
