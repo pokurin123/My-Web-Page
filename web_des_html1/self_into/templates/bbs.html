@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bbs.css">
+    <link rel="stylesheet" href="/static/css/bbs.css">
     <title>Document</title>
 </head>
 <body bgcolor="black">
@@ -11,7 +11,7 @@
 <nav id="gnav">
 <ul class="inner">
 <font color="white" size="6">
-    <li><a href="index.html">ホーム</a></li>
+    <li><a href="/">ホーム</a></li>
     <li><a href="career.html">基本情報</a></li>
     <li><a href="research.html">研究</a></li>
     <li><a href="skill.html">能力・経験</a></li>
@@ -23,7 +23,7 @@
 
     <div class="bbs_form">
         <font color="white">
-            <form action="" method="post">
+            <form action="/bbs.html/result" method="post">
                 <label for="article">投稿</label>
                 <textarea name="article" cols="40" rows="4" maxlength="20" placeholder="お気軽にどうぞ!"></textarea>
                 <p></p>
@@ -31,7 +31,22 @@
                 <input type="text" name="name">
                 <button type="submit">送信する</button>
             </form>
-            
+        </font>
+    </div>
+    <div style="padding: 10px; margin-bottom: 10px; border: 5px double #333333;" class="all">
+        <font color="white" size="6">
+            <table>
+                <tr><th>投稿</th><th>名前</th></tr>
+                    {% for line in lines: %}
+                        {% set column = line.rstrip().split(",") %}
+                        <tr>
+                            {% for item in column: %}
+                                <td>{{ "　" + item}}</td>
+                            {% endfor %}
+                        </tr>
+                    {% endfor %}
+                    
+            </table>
         </font>
     </div>
 </body>

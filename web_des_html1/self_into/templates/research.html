@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/research.css">
+    <link rel="stylesheet" href="/static/css/research.css">
     <title>Document</title>
 </head>
 <body bgcolor="black">
@@ -11,7 +11,7 @@
 <nav id="gnav">
 <ul class="inner">
 <font color="white" size="6">
-    <li><a href="index.html">ホーム</a></li>
+    <li><a href="/">ホーム</a></li>
     <li><a href="career.html">基本情報</a></li>
     <li><a href="#">研究</a></li>
     <li><a href="skill.html">能力・経験</a></li>
@@ -37,7 +37,7 @@
             <h3>
                 テキストや画像など、何かしらの要素を入力するとそれに応じたVR空間を自動生成する
             </h3>
-            <img src="images/dousa.png" width="50%" height="50%">
+            <img src="/static/images/dousa.png" width="50%" height="50%">
             図1
             <div class="res_tex1">
                 <h3>
@@ -53,9 +53,9 @@
                     →VRコンテンツを自動生成するシステムを研究する事で、その普及を手助けする！
                 </h3>
             </div>
-            <img src="images/dousa_ex.png" width="50%" height="50%">
+            <img src="/static/images/dousa_ex.png" width="50%" height="50%">
             図2.オブジェクトの自動選択、自動配置の動作例
-            <img src="images/csv_ex.png" width="40%" height="40%">
+            <img src="/static/images/csv_ex.png" width="40%" height="40%">
             図3.使用したCSVファイル(左からオブジェクト名,xyz値,拡大値,回転値)
         </font>
     </div>
@@ -64,15 +64,15 @@
             <h1>
                 2.OpenStreetMapから実在する地理情報を取得し、それをVR空間に3Dモデルで自動的に表現する
             </h1>
-            <img src="images/res2.png" width="50%" height="50%">
+            <img src="/static/images/res2.png" width="50%" height="50%">
             図1.研究ワークフロー
             <div class="res_tex2">
                 <h2>
                     ・OpenStreetMap(以下OSM)から取得する地理情報について
                 </h2>
-                <img src="images/node1.png" width="50%" height="50%">
+                <img src="/static/images/node1.png" width="50%" height="50%">
                 図2.地理情報1
-                <img src="images/node2.png" width="50%" height="50%">
+                <img src="/static/images/node2.png" width="50%" height="50%">
                 図3.地理情報2
                 <h3>
                     OSMから取得した地理情報は、図2の様に緯度経度が指定された座標形式で保存されており、それらの座標が図3の様にIDによって、建造物や道ごとに一まとめにされている。<br>
@@ -81,7 +81,7 @@
                 <h2>
                     ・座標を使った3Dモデル生成について
                 </h2>
-                <img src="images/node3.png" width="50%" height="50%">
+                <img src="/static/images/node3.png" width="50%" height="50%">
                 図4.3Dモデル生成例
                 <h3>
                     前述した座標である、赤い矢印が示した様な上方の頂点さえ取得してしまえば、<br>
