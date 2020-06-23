@@ -20,15 +20,18 @@
 </ul>
 </nav>
 </header>
+
     <div class="bbs_form">
         <font color="white">
-            <form action="bbs.cgi" method="POST">
-                お名前 <input type="textbox" name="namae" maxlength="20"><br>
-                件 名 <input type="textbox" name="kenmei" maxlength="40"><br>
-                内 容 <textarea name="naiyo"></textarea><br>
-                <input type="submit" value="送信">
+            <form action="/result" method="post">
+                <label for="article">投稿</label>
+                <textarea name="article" cols="40" rows="4" maxlength="20" placeholder="お気軽にどうぞ!"></textarea>
+                <p></p>
+                <label for="name">名前</label>
+                <input type="text" name="name">
+                <button type="submit">送信する</button>
             </form>
         </font>
-    </div>
+    <div/>
 </body>
 </html>
