@@ -34,19 +34,18 @@
         </font>
     </div>
     <div style="padding: 10px; margin-bottom: 10px; border: 5px double #333333;" class="all">
-        <font color="white" size="6">
-            <table>
-                <tr><th>投稿</th><th>名前</th></tr>
+        <font color="white" size="3">
+            <ul>
                     {% for line in lines: %}
+                        <li type="disc">
+                            <p>{{date_now}}</p>
                         {% set column = line.rstrip().split(",") %}
-                        <tr>
-                            {% for item in column: %}
-                                <td>{{ "　" + item}}</td>
-                            {% endfor %}
-                        </tr>
+                        {% for item in column: %}
+                            {{ "　" + item}}
+                        {% endfor %}
+                        </li>
                     {% endfor %}
-                    
-            </table>
+            </ul>
         </font>
     </div>
 </body>
