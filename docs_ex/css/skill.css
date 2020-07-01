@@ -1,0 +1,17 @@
+.blink {
+    animation: blinkAnime 0.3s infinite alternate;
+  }
+  @keyframes blinkAnime{
+     0% { color: #ffffff }
+   100% { color: #00e200 }
+  }
+
+  #gnav ul li{
+
+    display: inline;
+    
+    }
+
+.lung_ex{
+    line-height:2;
+}

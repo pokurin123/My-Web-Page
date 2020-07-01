@@ -1,97 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/home.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>web_tec_self-introduction</title>
+    <!--css-->
+    <link rel="stylesheet" href="full.css">
+    <!--font-->
+    <link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <title>Document</title>
 </head>
-<body bgcolor="black">
+<body bgcolor="black" link="white" vlink="white">
 <header>
-<nav id="gnav">
-<ul class="inner">
-<font color="white" size="6">
-    <li><a href="#">ホーム</a></li>
-    <li><a href="career.html">基本情報</a></li>
-    <li><a href="research.html">研究</a></li>
-    <li><a href="skill.html">能力・経験</a></li>
-    <li><a href="bbs.html">掲示板</a></li>
-</font>
-</ul>
-</nav>
+    <nav id="gnav">
+    <ul class="inner">
+    <font color="white" class="header">
+        <li><a href="#intro_jump">General Info</a></li>
+        <li><a href="#work1_jump">My work.1</a></li>
+        <li><a href="#work2_jump">My work.2</a></li>
+        <li><a href="#work3_jump">My work.3</a></li>
+        <li><a href="#skill">My Skill</a></li>
+    </font>
+    </ul>
+    </nav>
 </header>
+    <div class="home">
+        <div class="name_text" style="text-align:center">
+            <font color="white">
+                <br><br><br><br>
+                <span class="blink">
+                    <b>TAIKI KIMURA</b>
+                </span>
+            </font>
+        </div>
+    </div>
     <font color="white">
-        <div class = "welcom">
-            <font size="7" >
-                <h2 style="text-align:center">
-                    <marquee direction="right" behavior="alternate">
-                        <font color="#ff7a59"><b><span id="blink8342">
-                            ようこそ!
-                        </span><script>with(blink8342)id='',style.opacity=1,setInterval(function(){style.opacity^=1},500)</script>
-                    </b></font>
-                </marquee>
-                </h2>
-            </font>
-        </div>
-        <div class = "intro">
-            <font size="5">
-                <div style="padding: 10px; margin-bottom: 10px; border: 5px double #333333;">
-                    <h2 style="text-align:center">ここは武蔵野大学データサイエンス学部データサイエンス学科</h2>
-
-                    <h1 style="text-align:center">
-                        <font color="#FF0000">木</font><font color="#FF2B00">村</font><font color="#FF5600">太</font><font color="#FF8100">紀</font><font color="#FFAC00">(</font><font color="#FFD700">き</font><font color="#FFFF00">む</font><font color="#D5D52B">ら</font><font color="#ABAB56"> </font><font color="#818181">た</font><font color="#5757AC">い</font><font color="#2D2DD7">き</font><font color="#0000ff">)</font>
-                    </h1>
+    <div id="intro">
+        <img class="my_face" src="images/myface.png" >
+            <div id="intro_jump">
                 
-                    <h2 style="text-align:center">のWEBページです！</h2>
-                </div>
-            </font>
+                    <b class="intro_title">General Info</b>
+                
+                
+                    <b class="intro_txt">
+                        <ul>
+                            <li type="disc" class="intro_txt_0">Company   :   Musashino Univ</li>
+                            <p></p>
+                            <li type="disc" class="intro_txt_1">Origin   :   Tokyo</li>
+                            <p></p>
+                            <li type="disc" class="intro_txt_2">Age   :   20</li>
+                            <p></p>
+                            <li type="disc" class="intro_txt_3">Hobby   :   Music/Game/Art</li>
+                        </ul>
+                    </b>
+                
+            </div>
+    </div>
+    <div id="work_1">
+        <img class="move" src="images/move_1.png">
+        <a href="work_1.html" id="work1_jump"><b class="work_1_title">My work.1</b></a>
+        <div class="work_1_ex">
+            <p>キーワードや画像などの要素を入力し、それに即したVR上の3D空間を自動生成する研究。</p>
+            <p>詳細はリンク先へ</p>
         </div>
-        <div class = "count">
-            <h3 style="text-align:center">
-                あなたは
-                <a href="http://cnt.83net.jp/" target="_blank"><script type="text/javascript" src="http://cnt.83net.jp/js1/?pokurin123"></script><noscript><img src="http://cnt.83net.jp/?pokurin123" alt="無料レンタルカウンター" border="0"></noscript></a>
-                人目のお客様です ※キリ番踏み逃げ禁止!
-            </h3>
+    </div>
+    <div id="work_2">
+        <img class="city" src="images/city_1.png">
+        <a href="work_2.html" id="work2_jump"><b class="work_2_title">My work.2</b></a>
+        <div class="work_2_ex">
+            <p>OpenStreetMapから取得した実在する地理データを入力し、入力された地理データに即した3Dマップを自動生成させる研究。</p>
+            <p>詳細はリンク先へ</p>
         </div>
-        <div class = "career">
-            <h2 style="text-align:center">
-                <a href="career.html">
-                    ☆基本情報☆</a>
-            </h2>
+    </div>
+    <div id="work_3">
+        <video class="work_mov" src="images/JukeBox.mov">Oops! You can't play lol</video>
+         <b class="work_3_title" id="work3_jump">My work.3</b>
+         <div class="work_3_ex">
+             <p>1年生の頃に作成したジュークボックス 。当初ATMを作るはずが期限に間に合わず、徹夜して制作。</p>
+             <p>正直あまり見られたくない...</p>
+         </div>
+    </div>
+
+
+
+
+    <div id="skill">
+        <p class="my_skill" style="text-align:center">My Skill</p>
+        <div class="skill_list">
+        <ul>
+            <li type="disc">Python</li>
+            <li type="disc">C#</li>
+            <li type="disc">C++</li>
+            <li type="disc">HTML5</li>
+            <li type="disc">CSS</li>
+            <li type="disc">Flask</li>
+            <li type="disc">Django</li>
+            <li type="disc">Unity</li>
+        </ul>
         </div>
-        <div class = "research">
-            <h2 style="text-align:center">
-                <a href="research.html">
-                    ☆研究☆</a>
-            </h2>
-        </div>
-        <div class = "skill">
-            <h2 style="text-align:center">
-                <a href="skill.html">
-                    ☆能力・経験☆</a>
-            </h2>
-        </div>
-        <div class = "bbs">
-            <h2 style="text-align:center">
-                <a href="bbs.html">
-                    ☆掲示板☆
-                </a>
-            </h2>
-        </div>
-        <div style="padding: 10px; margin-bottom: 10px; border: 5px double #333333;" class="other">
-            <font size="5">
-                <h4>
-                    このページについて...<br>
-                    <ul>
-                    <li type="disc">・基本的にリンクフリーです、出来れば連絡お願いします</li>
-                    <li type="disc">相互リンク募集しています、可能な方ご連絡下さい!(^^)ﾉ</li>
-                    <li type="disc">最終更新日：2020年6月4日</li>
-                    <li type="disc">© 2020 Taiki Kimura.</li>
-                    </ul>
-                </h4>
-            </font>
-        </div>
+    </div>
+    <div id="git_qiita" style="text-align:center">
+        <a href="https://github.com/pokurin123"><b class="git">GIT HUB</b></a><br>
+        <a href="https://qiita.com/pokurin123"><b class="qiita">QIITA</b></a>
+    </div>
+    <div class="bye" style="text-align:center">
+        © 2020 Taiki Kimura.
+    </div>
     </font>
 </body>
-</html>
+</html>
