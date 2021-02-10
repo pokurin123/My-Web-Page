@@ -173,10 +173,42 @@ body{
     left:630px;
 }
 
+#work_4{
+    position:relative;
+    top: 1000px;   
+    width: 100%
+}
+
+.work_app{
+    width:35%;
+    height:35%;
+    position:relative;
+    filter: drop-shadow(10px 10px 10px rgba(0,0,0,1));
+    left:850px;
+    top:590px;
+}
+
+.work_4_title{
+    font-family: 'Notable', sans-serif;
+    font-size: 80px;
+    position:relative;
+    right:450px;
+    top:150px;
+}
+
+.work_4_ex{
+    font-weight: bold;
+    width: 712px;
+    font-size: 30px;
+    position:relative;
+    top:270px;
+    left:40px;
+}
+
 
 #skill{
     position:relative;
-    top: 1200px;   
+    top: 1500px;   
     width: 100%
 }
 
@@ -205,14 +237,14 @@ body{
     font-family: 'Notable', sans-serif;
     font-size: 50px;
     position:relative;
-    top: 1300px;   
+    top: 1600px;   
     width: 100%
 }
 
 .bye{
     font-size: 20px;
     position:relative;
-    top: 1400px;   
+    top: 1700px;   
     width: 100%
 }
 
@@ -304,9 +336,30 @@ body{
         left:10px;
     }
 
+    .work_app{
+        display: none;
+    }
+
+    .work_4_title{
+        font-family: 'Notable', sans-serif;
+        font-size: 60px;
+        position:relative;
+        left:10px;
+        top:-20px;
+    }
+
+    .work_4_ex{
+        font-weight: bold;
+        width: 400px;
+        font-size: 30px;
+        position:relative;
+        top:-40px;
+        left:10px;
+    }
+
     #skill{
         position:relative;
-        top: 900px;   
+        top: 1000px;   
         width: 100%
     }
 
@@ -330,14 +383,14 @@ body{
         font-family: 'Notable', sans-serif;
         font-size: 50px;
         position:relative;
-        top: 1000px;   
+        top: 1100px;   
         width: 100%
     }
 
     .bye{
         font-size: 20px;
         position:relative;
-        top: 1100px;   
+        top: 1200px;   
         width: 100%
     }
 }
