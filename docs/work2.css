@@ -8,16 +8,20 @@ body{
 
 .work_title{
     font-family: 'Notable', sans-serif;
+    
     font-size: 80px;
     width: 100%;
 }
 
-.slider{
-    width: 30%;
-    height:40%;
-    
+.smf{
+    display: none;
 }
 
+.work_pdf{
+    margin-left: 110px;
+    width:1200px;
+    height:700px;
+}
 
 @media screen and (max-width: 600px){
     .work_title{
@@ -25,5 +29,11 @@ body{
         
         font-size: 40px;
         width: 100%;
+    }
+    .work_pdf{
+        display: none;
+    }
+    .smf{
+        display: block;
     }
 }
