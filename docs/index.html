@@ -2,128 +2,248 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--css-->
-    <link rel="stylesheet" href="full.css">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/index.css" rel="stylesheet">
+
+    <script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/fadein.js"></script>
+
     <!--font-->
     <link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <title>Document</title>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-X2R918TFDD"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-X2R918TFDD');
-</script>
 </head>
-<body bgcolor="black" link="white" vlink="white">
-<header>
-    <nav id="gnav">
-    <ul class="inner">
-    <font color="white" class="header">
-        <li><a href="#intro_jump">General Info</a></li>
-        <li><a href="#work1_jump">My work.1</a></li>
-        <li><a href="#work2_jump">My work.2</a></li>
-        <li><a href="#work3_jump">My work.3</a></li>
-        <li><a href="#skill">My Skill</a></li>
-    </font>
-    </ul>
-    </nav>
-</header>
-    <div class="home">
-        <div class="name_text" style="text-align:center">
-            <font color="white">
-                <br><br><br><br>
-                <span class="blink">
-                    <b>TAIKI KIMURA</b>
-                </span>
-            </font>
-        </div>
-    </div>
-    <font color="white">
-    <div id="intro">
-        <img class="my_face" src="images/myface2.png" >
-            <div id="intro_jump">
-                
-                    <b class="intro_title">General Info</b>
-                
-                
-                    <b class="intro_txt">
-                        <ul>
-                            <li type="disc" class="intro_txt_0">Company   :   Musashino Univ</li>
-                            <p></p>
-                            <li type="disc" class="intro_txt_1">Origin   :   Tokyo</li>
-                            <p></p>
-                            <li type="disc" class="intro_txt_2">Age   :   20</li>
-                            <p></p>
-                            <li type="disc" class="intro_txt_3">Hobbies   :   Music/Game/Art</li>
-                        </ul>
-                    </b>
-                
+<body link="white" vlink="white">
+    <div class="container" style="height: 100vh;">
+        <div class="row align-items-center" style="height: 100%;">
+            <div class="col-lg-12" style="text-align: center; ">
+                <div class="name_text">
+                    <span class="blink">
+                        <b>TAIKI KIMURA</b>
+                    </span>
+                </div>
             </div>
-    </div>
-    <div id="work_1">
-        <img class="move" src="images/move_1.png">
-        <a href="work_1_pdf.html" id="work1_jump"><b class="work_1_title">My work.1</b></a>
-        <div class="work_1_ex">
-            <p>キーワードや画像などの要素を入力し、それに即したVR上の3D空間を自動生成する研究。</p>
-            <p>詳細はリンク先へ</p>
         </div>
-    </div>
-    <div id="work_2">
-        <img class="city" src="images/city_1.png">
-        <a href="work_2_pdf.html" id="work2_jump"><b class="work_2_title">My work.2</b></a>
-        <div class="work_2_ex">
-            <p>OpenStreetMapから取得した実在する地理データを入力し、入力された地理データに即した3Dマップを自動生成させる研究。</p>
-            <p>詳細はリンク先へ</p>
+
+        <div class="row align-items-center" style="height: 100%;">
+            <div class="col-lg-6">
+                <section class="fadein" >
+                    <b class="intro_title">General Info</b>
+                    <ul>
+                        <li type="disc" class="intro_txt_0">Company<br>--- Musashino Univ</li>
+                        <p></p>
+                        <li type="disc" class="intro_txt_1">Origin<br>--- Tokyo</li>
+                        <p></p>
+                        <li type="disc" class="intro_txt_2">Birth<br>--- 2000/3/30</li>
+                        <p></p>
+                        <li type="disc" class="intro_txt_3">Hobbies<br>--- Music/Game/Art</li>
+                    </ul>
+                </section>
+            </div>
+            <div class="col-lg-6">
+                <section class="fadein" >
+                    <br><br><br><br><br>
+                    <img class="my_face" src="images/myface2.png">
+                </section>
+            </div>
         </div>
-    </div>
-    <div id="work_3">
-        <img class="work_mov" src="images/NPC.png">
-         <b class="work_3_title" id="work3_jump">My work.3</b>
-         <div class="work_3_ex">
-             <p>学科オープンキャンパスにて使用するWEBアプリ開発において、教授NPCの挙動及びにランダム移動システム開発を担当。</p>
-         </div>
-    </div>
-    <div id="work_4">
-        <img class="work_app" src="images/work4.png">
-        <a href="work_4_pdf.html" id="work4_jump"><b class="work_4_title">My work.4</b></a>
-         <div class="work_4_ex">
-             <p>大学において研究や活動を発表する機会は、学会などの限られたものしか存在しない。それにおいて画一化された外部発表機会を提供するWebアプリを開発する。</p>
-         </div>
-    </div>
 
-
-
-
-    <div id="skill">
-        <p class="my_skill" style="text-align:center">My Skill</p>
-        <div class="skill_list">
-        <ul>
-            <li type="disc">Python</li>
-            <li type="disc">C#</li>
-            <li type="disc">C++</li>
-            <li type="disc">HTML5</li>
-            <li type="disc">CSS</li>
-            <li type="disc">Flask</li>
-            <li type="disc">Django</li>
-            <li type="disc">Unity</li>
-        </ul>
+        <div class="row align-items-center" style="height: 100%;">
+            <div class="col-lg-12">
+                <section class="fadein" >
+                    <div class="experience" style="text-align: center; "><br><br>Experience</div>
+                    <ul class="experience_txt">
+                        <br>
+                        <li type="disc">VR関係開発 (Oculus,Unity)</li>
+                        <li type="disc">Webアプリ開発 (サーバサイド、バック・フロントエンドまで一通り)</li>
+                        <li type="disc">データ分析 (帝国データバンクにて研究員としてデータ分析に従事中)</li>
+                        <li type="disc">形態素解析などテキスト分析</li>
+                        <li type="disc">IoT系センサー開発 (raspberry pi使用)</li>
+                    </ul>
+                </section>
+            </div>
         </div>
+
+        <div class="row align-items-center" style="height: 100%;">
+            <div class="col-lg-6">
+                <section class="fadein" >
+                    <br><br><br><br><br>
+                    <img class="move" src="images/move_1.png">
+                </section>
+            </div>
+            <div class="col-lg-6">
+                <section class="fadein" >
+                    <br><br><br>
+                    <a href="work_1_pdf.html" id="work1_jump"><b class="work_1_title">My work.1</b></a>
+                    <b class="work_1_ex">
+                        <br><br>
+                        <p>キーワードや画像などの要素を入力し、それに即したVR上の3D空間を自動生成する研究。</p>
+                        <p>詳細はリンク先へ</p>
+                    </b>
+                </section>
+            </div>
+        </div>
+
+        <div class="row align-items-center" style="height: 100%;">
+            <div class="col-lg-6">
+                <section class="fadein">
+                    <a href="work_2_pdf.html" id="work2_jump"><b class="work_2_title">My work.2</b></a>
+                    <b class="work_2_ex">
+                        <br><br><br>
+                        <p>OpenStreetMapから取得した実在する地理データを入力し、入力された地理データに即した3Dマップを自動生成させる研究。</p>
+                        <p>詳細はリンク先へ</p>
+                    </b>
+                </section>
+            </div>
+            <div class="col-lg-6">
+                <section class="fadein" >
+                    <br><br><br><br><br>
+                    <img class="city" src="images/city_1.png">
+                </section>
+            </div>
+        </div>
+
+        <div class="row align-items-center" style="height: 100%;">
+            <div class="col-lg-6">
+                <section class="fadein" >
+                    <br><br><br><br><br>
+                    <img class="work_mov" src="images/NPC.png">
+                </section>
+            </div>
+            <div class="col-lg-6">
+                <section class="fadein" >
+                    <br><br><br>
+                    <a href="work_3_pdf.html" id="work3_jump"><b class="work_3_title">My work.3</b></a>
+                    <b class="work_3_ex">
+                        <br><br>
+                        <p>学科オープンキャンパスにて使用するWEBアプリ開発において、教授NPCの挙動及びにランダム移動システム開発を担当。</p>
+                    </b>
+                </section>
+            </div>
+        </div>
+
+        <div class="row align-items-center" style="height: 100%;">
+            <div class="col-lg-6">
+                <section class="fadein">
+                    <a href="work_4_pdf.html" id="work4_jump"><b class="work_4_title">My work.4</b></a>
+                    <b class="work_4_ex">
+                        <br><br><br>
+                        <p>大学において研究や活動を発表する機会は、学会などの限られたものしか存在しない。それにおいて画一化された外部発表機会を提供するWebアプリを開発する。</p>
+                    </b>
+                </section>
+            </div>
+            <div class="col-lg-6">
+                <section class="fadein" >
+                    <br><br><br><br><br>
+                    <img class="work_app" src="images/work4.png">
+                </section>
+            </div>
+        </div>
+
+        <div class="row align-items-center" style="height: 100%;">
+            <div class="col-lg-6">
+                <section class="fadein" >
+                    <br><br><br><br><br>
+                    <img class="raspi" src="images/raspi.png">
+                </section>
+            </div>
+            <div class="col-lg-6">
+                <section class="fadein" >
+                    <br><br><br>
+                    <a href="work_5_pdf.html" id="work5_jump"><b class="work_5_title">My work.5</b></a>
+                    <b class="work_5_ex">
+                        <br><br>
+                        <p>Raspberry Piを用いて赤外線センサーシステムを構築し、そこから得られた混雑度を分析するWebアプリの開発。</p>
+                    </b>
+                </section>
+            </div>
+        </div>
+
+        <div class="row align-items-end" style="height: 50%;">
+            <div class="col-lg-12" style="text-align: center; ">
+                <section class="fadein">
+                    <b>
+                        <div class="skill_title">
+                            MY SKILL
+                        </div>
+                    </b>
+                </section>
+            </div>
+        </div>
+        <section class="fadein">
+        <div class="row align-items-start justify-content-around">
+            <div class="col-lg-3" >
+                <b class="test">Python</b>
+            </div>
+            <div class="col-lg-3" >
+                <b class="test">javascript</b>
+            </div>
+        </div>
+        <div class="row align-items-start justify-content-around">
+            <div class="col-lg-3" >
+                <b class="test">PHP</b>
+            </div>
+            <div class="col-lg-3" >
+                <b class="test">MySQL</b>
+            </div>
+        </div>
+        <div class="row align-items-start justify-content-around">
+            <div class="col-lg-3" >
+                <b class="test">PostgreSQL</b>
+            </div>
+            <div class="col-lg-3" >
+                <b class="test">HTML5</b>
+            </div>
+        </div>
+        <div class="row align-items-start justify-content-around">
+            <div class="col-lg-3" >
+                <b class="test">CSS</b>
+            </div>
+            <div class="col-lg-3" >
+                <b class="test">Unity</b>
+            </div>
+        </div>
+        <div class="row align-items-start justify-content-around">
+            <div class="col-lg-3" >
+                <b class="test">Flask</b>
+            </div>
+            <div class="col-lg-3" >
+                <b class="test">Django</b>
+            </div>
+        </div>
+        <div class="row align-items-start justify-content-around">
+            <div class="col-lg-3" >
+                <b class="test">React.js</b>
+            </div>
+            <div class="col-lg-3" >
+                <b class="test">node.js</b>
+            </div>
+        </div>
+        <div class="row align-items-start justify-content-around">
+            <div class="col-lg-3" >
+                <b class="test">Raspberrypi</b>
+            </div>
+            <div class="col-lg-3" >
+                <b class="test">Mecab</b>
+            </div>
+        </div>
+        </section>
+        
+        <div class="row align-items-center" style="height: 50%;">
+            <section class="fadein">
+            <div class="col-lg-12" style="text-align: center; ">
+                <a href="https://github.com/pokurin123"><b class="git">GIT HUB</b></a><br>
+                <a href="https://qiita.com/pokurin123"><b class="qiita">QIITA</b></a>
+            </div>
+            </section>
+        </div>
+
     </div>
-    <div id="git_qiita" style="text-align:center">
-        <a href="https://github.com/pokurin123"><b class="git">GIT HUB</b></a><br>
-        <a href="https://qiita.com/pokurin123"><b class="qiita">QIITA</b></a>
-    </div>
-    <div class="bye" style="text-align:center">
-        © 2020 Taiki Kimura.
-    </div>
-    </font>
+    <footer class="fixed-bottom " style="text-align: center; color: white;">@Taiki Kimura. All rights reserved</footer>
+    
 </body>
-</html> 
+</html>

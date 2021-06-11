@@ -1,0 +1,398 @@
+body{
+    background-color: black;            /* 背景色 */
+   background-image: url("images/ofilia.png"); /* 画像 */
+   background-size: cover;               /* 全画面 */
+   background-attachment: fixed;         /* 固定 */
+   background-position: center center;   /* 縦横中央 */
+}
+
+
+
+.blink {
+    animation: blinkAnime 2s infinite alternate;
+  }
+  @keyframes blinkAnime{
+     0% { color: rgba(0,0,0,0) }
+   100% { color: #ffffff }
+  }
+  
+  #gnav ul li{
+
+    display: inline;
+    
+    }
+
+.header{
+    font-family: 'Notable', sans-serif;
+    font-size: 30px;
+    width: 100%;
+}
+
+.name_text{
+    
+    font-family: 'Notable', sans-serif;
+    font-size: 80px;
+    width: 100%;
+}
+
+#intro{
+    position:relative;
+    top: 600px;   
+    width: 100%
+}
+
+.my_face{
+    width:35%;
+    height:35%;
+    position:relative;
+    filter: drop-shadow(-10px 10px 10px rgba(0,0,0,1));
+    left:800px;
+    top:670px;
+}
+
+.intro_title{
+    font-family: 'Notable', sans-serif;
+    font-size: 80px;
+}
+
+.intro_txt{
+    font-family: 'Teko', sans-serif;
+    font-size: 50px;
+}
+
+.intro_txt_0{
+    position:relative;
+    top:40px;
+}
+
+.intro_txt_1{
+    position:relative;
+    top:40px;
+}
+
+.intro_txt_2{
+    position:relative;
+    top:40px;
+}
+
+.intro_txt_3{
+    position:relative;
+    top:40px;
+}
+
+#work_1{
+    position:relative;
+    top: 700px;   
+    width: 100%
+}
+
+.move{
+    width:40%;
+    height:40%;
+    position:relative;
+    filter: drop-shadow(10px 10px 10px rgba(0,0,0,1));
+    left:20px;
+    top:350px;
+}
+
+.work_1_title{
+    font-family: 'Notable', sans-serif;
+    font-size: 80px;
+    position:relative;
+    left:90px;
+}
+
+.work_1_ex{
+    font-weight: bold;
+    width: 712px;
+    font-size: 30px;
+    position:relative;
+    top:80px;
+    left:630px;
+}
+
+#work_2{
+    position:relative;
+    top: 800px;   
+    width: 100%
+}
+
+.city{
+    width:36%;
+    height:36%;
+    position:relative;
+    filter: drop-shadow(-10px 10px 10px rgba(0,0,0,1));
+    left:850px;
+    top:350px;
+}
+
+.work_2_title{
+    font-family: 'Notable', sans-serif;
+    font-size: 80px;
+    position:relative;
+    right:450px;
+    top:-200px;
+    
+}
+
+.work_2_ex{
+    font-weight: bold;
+    width: 712px;
+    font-size: 30px;
+    position:relative;
+    left:40px;
+}
+
+#work_3{
+    position:relative;
+    top: 900px;   
+    width: 100%
+}
+
+.work_mov{
+    width:35%;
+    height:35%;
+    position:relative;
+    filter: drop-shadow(10px 10px 10px rgba(0,0,0,1));
+    left:40px;
+    top:420px;
+}
+
+.work_3_title{
+    font-family: 'Notable', sans-serif;
+    font-size: 80px;
+    position:relative;
+    left:180px;
+    top:-120px;
+}
+
+.work_3_ex{
+    font-weight: bold;
+    width: 712px;
+    font-size: 30px;
+    position:relative;
+    top:40px;
+    left:630px;
+}
+
+#work_4{
+    position:relative;
+    top: 1000px;   
+    width: 100%
+}
+
+.work_app{
+    width:35%;
+    height:35%;
+    position:relative;
+    filter: drop-shadow(10px 10px 10px rgba(0,0,0,1));
+    left:850px;
+    top:590px;
+}
+
+.work_4_title{
+    font-family: 'Notable', sans-serif;
+    font-size: 80px;
+    position:relative;
+    right:450px;
+    top:150px;
+}
+
+.work_4_ex{
+    font-weight: bold;
+    width: 712px;
+    font-size: 30px;
+    position:relative;
+    top:270px;
+    left:40px;
+}
+
+
+#skill{
+    position:relative;
+    top: 1500px;   
+    width: 100%
+}
+
+.my_skill{
+    font-family: 'Notable', sans-serif;
+    font-size: 80px;
+}
+
+.skill_list ul{
+    font-family: 'Teko', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    width: 900px;
+    list-style: none outside;
+    margin-right: auto;
+    margin-left: 380px;
+}
+
+.skill_list li{
+    
+    float: left;
+    width: 450px;
+}
+
+#git_qiita{
+    font-family: 'Notable', sans-serif;
+    font-size: 50px;
+    position:relative;
+    top: 1600px;   
+    width: 100%
+}
+
+.bye{
+    font-size: 20px;
+    position:relative;
+    top: 1700px;   
+    width: 100%
+}
+
+@media screen and (max-width: 600px) {
+    .my_face{
+        display: none;
+    }
+
+    .move{
+        display: none;
+    }
+
+    .header{
+        font-family: 'Notable', sans-serif;
+        font-size: 10px;
+        width: 100%;
+    }
+
+    #intro{
+        position:relative;
+        top: 600px;   
+        width: 100%
+    }
+
+    .intro_title{
+        font-family: 'Notable', sans-serif;
+        font-size: 60px;
+    }
+
+    .intro_txt{
+        font-family: 'Teko', sans-serif;
+        font-size: 30px;
+    }
+
+    .work_1_title{
+        font-family: 'Notable', sans-serif;
+        font-size: 60px;
+        position:relative;
+        left:10px;
+    }
+    .work_1_ex{
+        font-weight: bold;
+        width: 400px;
+        font-size: 30px;
+        position:relative;
+        top:-10px;
+        left:10px;
+    }
+
+    .city{
+        display: none;
+    }
+
+    .work_2_title{
+        font-family: 'Notable', sans-serif;
+        font-size: 60px;
+        position:relative;
+        left:10px;
+        top:20px;
+        
+    }
+
+    .work_2_ex{
+        font-weight: bold;
+        width: 400px;
+        font-size: 30px;
+        position:relative;
+        left:10px;
+    }
+
+    .work_mov{
+        display: none;
+    }
+
+    .work_3_title{
+        font-family: 'Notable', sans-serif;
+        font-size: 60px;
+        position:relative;
+        left:10px;
+        top:-20px;
+    }
+
+    .work_3_ex{
+        font-weight: bold;
+        width: 400px;
+        font-size: 30px;
+        position:relative;
+        top:-40px;
+        left:10px;
+    }
+
+    .work_app{
+        display: none;
+    }
+
+    .work_4_title{
+        font-family: 'Notable', sans-serif;
+        font-size: 60px;
+        position:relative;
+        left:10px;
+        top:-20px;
+    }
+
+    .work_4_ex{
+        font-weight: bold;
+        width: 400px;
+        font-size: 30px;
+        position:relative;
+        top:-40px;
+        left:10px;
+    }
+
+    #skill{
+        position:relative;
+        top: 1000px;   
+        width: 100%
+    }
+
+    .skill_list ul{
+        font-family: 'Teko', sans-serif;
+        font-weight: bold;
+        font-size: 50px;
+        width: 350px;
+        list-style: none outside;
+        margin-right: auto;
+        margin-left: 10px;
+    }
+
+    .skill_list li{
+    
+        float: left;
+        width: 175px;
+    }
+
+    #git_qiita{
+        font-family: 'Notable', sans-serif;
+        font-size: 50px;
+        position:relative;
+        top: 1100px;   
+        width: 100%
+    }
+
+    .bye{
+        font-size: 20px;
+        position:relative;
+        top: 1200px;   
+        width: 100%
+    }
+}
