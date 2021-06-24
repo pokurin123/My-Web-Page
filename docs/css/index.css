@@ -60,6 +60,7 @@ body{
 }
 
 .intro_txt_02{
+    /* font-family: 'DotGothic16', sans-serif; */
     font-family: 'Notable', sans-serif;
     font-size: 40px;
     color: white;
@@ -97,6 +98,7 @@ body{
 
 .experience_txt{
     /* font-family: 'Notable', sans-serif; */
+    font-family: 'M PLUS 1p', sans-serif;
     font-weight: bold;
     font-size: 40px;
     position:relative;
